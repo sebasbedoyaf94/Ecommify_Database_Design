@@ -7,9 +7,10 @@ Para levantar el modelo relacional en PostgreSQL correctamente, los scripts SQL 
 Se debe seguir la siguiente secuencia:
 
 1. Creación del esquema base --> Se debe ejecutar el script principal de DDL para crear las tablas y estructura
-     Archivo --> /postgresql/schema/ecommify.sql
+
+        Archivo --> /postgresql/schema/ecommify.sql
    
-2. Carga de semillas --> Se debe ejecutar en el siguiente orden:
+3. Carga de semillas --> Se debe ejecutar en el siguiente orden:
      1. Categorías
           Archivo --> /postgresql/seed_data/categories.sql
      2. Códigos postales
@@ -25,9 +26,9 @@ Se debe seguir la siguiente secuencia:
      7. Pago pedido
           Archivo --> /postgresql/seed_data/order_payments.sql
 
-3. Creación de informes --> Una vez se tenga toda la información en la base de datos, se deben crear los siguientes scripts
+4. Creación de informes --> Una vez se tenga toda la información en la base de datos, se deben crear los siguientes scripts
      Archivo 1 --> /postgresql/queries/mv_resumen_vendedores.sql
      Archivo 2 --> /postgresql/queries/mv_ventas_por_ciudad.sql
 
-4. Validación --> Ejecutar las consultas para validar que la carga de información fue exitosa
+5. Validación --> Ejecutar las consultas para validar que la carga de información fue exitosa
      Archivo --> /postgresql/queries/consultas.sql
