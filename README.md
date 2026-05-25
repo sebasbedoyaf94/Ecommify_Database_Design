@@ -10,25 +10,41 @@ Se debe seguir la siguiente secuencia:
 
         Archivo --> /postgresql/schema/ecommify.sql
    
-3. Carga de semillas --> Se debe ejecutar en el siguiente orden:
+2. Carga de semillas --> Se debe ejecutar en el siguiente orden:
+   
      1. Categorías
-          Archivo --> /postgresql/seed_data/categories.sql
+
+                Archivo --> /postgresql/seed_data/categories.sql
+        
      2. Códigos postales
-          Archivo --> /postgresql/seed_data/zip_codes.sql
+        
+                  Archivo --> /postgresql/seed_data/zip_codes.sql
+        
      3. Clientes
-          Archivo --> /postgresql/seed_data/customers.sql
+        
+                  Archivo --> /postgresql/seed_data/customers.sql
+        
      4. Vendedores
-          Archivo --> /postgresql/seed_data/sellers.sql
+        
+                  Archivo --> /postgresql/seed_data/sellers.sql
+        
      5. Pedidos
-          Archivo --> /postgresql/seed_data/orders.sql
+         
+                  Archivo --> /postgresql/seed_data/orders.sql
+        
      6. Productos pedido
-          Archivo --> /postgresql/seed_data/order_items.sql
+         
+                  Archivo --> /postgresql/seed_data/order_items.sql
+         
      7. Pago pedido
-          Archivo --> /postgresql/seed_data/order_payments.sql
+         
+                  Archivo --> /postgresql/seed_data/order_payments.sql
 
-4. Creación de informes --> Una vez se tenga toda la información en la base de datos, se deben crear los siguientes scripts
-     Archivo 1 --> /postgresql/queries/mv_resumen_vendedores.sql
-     Archivo 2 --> /postgresql/queries/mv_ventas_por_ciudad.sql
+3. Creación de informes --> Una vez se tenga toda la información en la base de datos, se deben crear los siguientes scripts
 
-5. Validación --> Ejecutar las consultas para validar que la carga de información fue exitosa
-     Archivo --> /postgresql/queries/consultas.sql
+           Archivo 1 --> /postgresql/queries/mv_resumen_vendedores.sql
+           Archivo 2 --> /postgresql/queries/mv_ventas_por_ciudad.sql
+
+4. Validación --> Ejecutar las consultas para validar que la carga de información fue exitosa
+
+           Archivo --> /postgresql/queries/consultas.sql
