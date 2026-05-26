@@ -1,0 +1,14 @@
+{
+  "_id": "7ac549e1e29c625d3934329e43b546e5",
+  "order_id": "e481f51cbdc54678b7349021f2804312",
+  "review_score": 5,
+  "review_comment": {
+    "title": "Excelente servicio",
+    "message": "El producto llegó mucho antes de lo estimado y en perfectas condiciones."
+  },
+  "timestamps": {
+    "creation_date": "2017-09-21T00:00:00Z",
+    "answer_timestamp": "2017-09-22T10:57:03Z"
+  }
+}
+

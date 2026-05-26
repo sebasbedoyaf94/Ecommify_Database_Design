@@ -1,0 +1,12 @@
+{
+  "_id": "01001",
+  "geolocation_zip_code_prefix": 1001,
+  "location": {
+    "type": "Point",
+    "coordinates": [-46.634007, -23.549807]
+  },
+  "city": "sao paulo",
+  "state": "SP"
+}
+
+

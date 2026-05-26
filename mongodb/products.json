@@ -1,0 +1,19 @@
+{
+  "_id": "060cb19345d90064d1015407193c6ffc",
+  "product_category_name": "perfumeria",
+  "physical_specs": {
+    "weight_g": 525,
+    "length_cm": 17,
+    "height_cm": 11,
+    "width_cm": 12
+  },
+  "multimedia_metadata": {
+    "product_name_length": 42,
+    "product_description_length": 774,
+    "photos_qty": 2
+  },
+  "performance_metrics": {
+    "average_review_score": 4.6,
+    "total_reviews_count": 18
+  }
+}
