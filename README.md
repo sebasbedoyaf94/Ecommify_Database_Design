@@ -1,4 +1,4 @@
-# Ecommify Database Design
+# Ecommify Database Design - E27
 
 Guía de Despliegue y Ejecución de Base de Datos (PostgreSQL)
 
