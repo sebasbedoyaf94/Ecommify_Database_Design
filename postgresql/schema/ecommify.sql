@@ -23,7 +23,6 @@ CREATE TABLE public.categories (
 	category_name varchar NOT NULL,
 	category_translations jsonb NOT NULL
 );
-CREATE INDEX categories_name_trgm_idx ON public.categories USING gin (category_name gin_trgm_ops);
 
 
 -- public.zip_codes definition
@@ -38,7 +37,6 @@ CREATE TABLE public.zip_codes (
 	state varchar NOT NULL,
 	CONSTRAINT zip_codes_pk PRIMARY KEY (zip_code_prefix)
 );
-CREATE INDEX zip_codes_city_trgm_idx ON public.zip_codes USING gin (city gin_trgm_ops);
 
 
 -- public.customers definition
@@ -54,7 +52,6 @@ CREATE TABLE public.customers (
 	CONSTRAINT customers_pk PRIMARY KEY (customer_id),
 	CONSTRAINT customers_zip_codes_fk FOREIGN KEY (customer_zip_code) REFERENCES public.zip_codes(zip_code_prefix)
 );
-CREATE INDEX customers_customer_zip_code_idx ON public.customers USING btree (customer_zip_code);
 
 
 -- public.orders definition
@@ -76,8 +73,6 @@ CREATE TABLE public.orders (
 	CONSTRAINT orders_pk PRIMARY KEY (order_id),
 	CONSTRAINT orders_customers_fk FOREIGN KEY (customer_id) REFERENCES public.customers(customer_id)
 );
-CREATE INDEX orders_customer_id_idx ON public.orders USING btree (customer_id);
-CREATE INDEX orders_order_status_idx ON public.orders USING btree (order_status);
 
 
 -- public.sellers definition
@@ -92,7 +87,6 @@ CREATE TABLE public.sellers (
 	CONSTRAINT sellers_pk PRIMARY KEY (seller_id),
 	CONSTRAINT sellers_zip_codes_fk FOREIGN KEY (seller_zip_code) REFERENCES public.zip_codes(zip_code_prefix)
 );
-CREATE INDEX sellers_seller_zip_code_idx ON public.sellers USING btree (seller_zip_code);
 
 
 -- public.order_items definition
@@ -113,9 +107,6 @@ CREATE TABLE public.order_items (
 	CONSTRAINT order_items_orders_fk FOREIGN KEY (order_id) REFERENCES public.orders(order_id),
 	CONSTRAINT order_items_sellers_fk FOREIGN KEY (seller_id) REFERENCES public.sellers(seller_id)
 );
-CREATE INDEX order_items_order_id_idx ON public.order_items USING btree (order_id);
-CREATE INDEX order_items_product_id_idx ON public.order_items USING btree (product_id);
-CREATE INDEX order_items_seller_id_idx ON public.order_items USING btree (seller_id);
 
 
 -- public.order_payments definition
@@ -135,8 +126,6 @@ CREATE TABLE public.order_payments (
 	CONSTRAINT order_payments_pk PRIMARY KEY (order_id, payment_sequential),
 	CONSTRAINT order_payments_orders_fk FOREIGN KEY (order_id) REFERENCES public.orders(order_id)
 );
-CREATE INDEX order_payments_order_id_idx ON public.order_payments USING btree (order_id);
-CREATE INDEX order_payments_payment_type_idx ON public.order_payments USING btree (payment_type);
 
 
 
