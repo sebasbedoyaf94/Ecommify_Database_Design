@@ -2,7 +2,15 @@
 
 Integrantes: Edgar Andrés Romero, Jhon Alexander Tenjo, Julian David Miranda, Sebastián Bedoya Flórez
 
-## 1. Componente Relacional (PostgreSQL)
+---
+
+## Demostración del Proyecto
+
+https://github.com/sebasbedoyaf94/Ecommify_Database_Design/blob/main/media/demo.mp4
+
+---
+
+## Componente Relacional (PostgreSQL)
 
 Para levantar el modelo relacional en PostgreSQL correctamente, poblar el dataset de prueba y replicar el benchmark de rendimiento, los scripts SQL deben ejecutarse en el siguiente orden estricto para evitar errores de dependencias y llaves foráneas:
 
