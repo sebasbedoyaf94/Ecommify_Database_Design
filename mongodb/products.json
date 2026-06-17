@@ -1,19 +1,19 @@
 {
-  "_id": "060cb19345d90064d1015407193c6ffc",
-  "product_category_name": "perfumeria",
+  "_id": "1e9e8ef04dbcff4541ed26657ea517e5",
+  "product_category_name": "perfumaria",
   "physical_specs": {
-    "weight_g": 525,
-    "length_cm": 17,
-    "height_cm": 11,
-    "width_cm": 12
+    "weight_g": 225,
+    "length_cm": 16,
+    "height_cm": 10,
+    "width_cm": 14
   },
   "multimedia_metadata": {
-    "product_name_length": 42,
-    "product_description_length": 774,
-    "photos_qty": 2
+    "product_name_length": 40,
+    "product_description_length": 287,
+    "photos_qty": 1
   },
   "performance_metrics": {
-    "average_review_score": 4.6,
-    "total_reviews_count": 18
+    "average_review_score": 5,
+    "total_reviews_count": 1
   }
 }
